@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 키가 어떻게 되시나요?"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/patient_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 몸무게가 어떻게 되시나요?"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/patient_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. 다음과 같은 질병으로 진단을 받은 적이 있습니까?"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:stretchColumns="*">
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="뇌졸중(중풍)" />
+
+                <RadioGroup
+                    android:id="@+id/diseasehistory1A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory1Ayes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory1Ano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="심근경색/협심증" />
+
+                <RadioGroup
+                    android:id="@+id/diseasehistory2A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory2Ayes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory2Ano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="고혈압" />
+
+                <RadioGroup
+                    android:id="@+id/diseasehistory3A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory3Ayes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory3Ano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="당뇨병" />
+
+                <RadioGroup
+                    android:id="@+id/diseasehistory4A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory4Ayes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory4Ano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="이상지질혈증" />
+
+                <RadioGroup
+                    android:id="@+id/diseasehistory5A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory5Ayes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory5Ano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="폐결핵" />
+
+                <RadioGroup
+                    android:id="@+id/diseasehistory6A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory6Ayes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory6Ano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="기타(암 포함)" />
+
+                <RadioGroup
+                    android:id="@+id/diseasehistory7A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory7Ayes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasehistory7Ano"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. 부모, 형제, 자매 중에 다음 질환을 앓았거나 해당 질환으로 사망한 경우가 있으십니까?"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="뇌졸중(중풍)" />
+
+                <RadioGroup
+                    android:id="@+id/diseasefamily1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasefamily1yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasefamily1no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="심근경색/협심증" />
+
+                <RadioGroup
+                    android:id="@+id/diseasefamily2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasefamily2yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasefamily2no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="고혈압" />
+
+                <RadioGroup
+                    android:id="@+id/diseasefamily3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasefamily3yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasefamily3no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="당뇨병" />
+
+                <RadioGroup
+                    android:id="@+id/diseasefamily4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasefamily4yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasefamily4no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="기타(암 포함)" />
+
+                <RadioGroup
+                    android:id="@+id/diseasefamily5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/diseasefamily5yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+
+                    <RadioButton
+                        android:id="@+id/diseasefamily5no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. B형 간염 바이러스 보균자인가요?"
+                android:textSize="13dp" />
+            <RadioGroup
+                android:id="@+id/virusB"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/virusByes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="예" />
+                <RadioButton
+                    android:id="@+id/virusBno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아니오" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. 흡연 경험이 있으신가요?"
+                android:textSize="13dp" />
+
+            <RadioGroup
+                android:id="@+id/smoke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="63dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/smokeyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="예" />
+
+                <RadioButton
+                    android:id="@+id/smokeno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아니오" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. 음주 경험이 있으신가요?"
+                android:textSize="13dp" />
+
+            <RadioGroup
+                android:id="@+id/drink"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="63dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/drinkyes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="예" />
+
+                <RadioButton
+                    android:id="@+id/drinkno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아니오" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. 기타 특이사항이 있다면 써주세요"
+                android:textSize="13dp" />
+
+            <EditText
+                android:id="@+id/patient_additionalmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/interview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="등록/수정" />
+    </LinearLayout>
+</ScrollView>

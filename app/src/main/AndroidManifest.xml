@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ssibal">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MED_CONNECT"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoadingActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Main_SpecificPatientInfo_history_add_main" />
+        <activity android:name=".Main_SpecificPatientInfo_history_add_choosehospital_adapter" />
+        <activity android:name=".Main_SpecificPatientInfo_history_add_choosehospital" />
+        <activity android:name=".Main_SpecificPatientInfo_history" />
+        <activity android:name=".Main_SpecificPatientInfo_Interview" />
+        <activity
+            android:name=".Main_SpecificPatientInfo"
+            android:label="@string/title_activity_main__specific_patient_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Main_PatientInfo_AddPatient" />
+        <activity android:name=".Login_Activity_Guardian">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Login_Activity_GuardianRegister"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

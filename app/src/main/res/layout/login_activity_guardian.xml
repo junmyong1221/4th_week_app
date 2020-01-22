@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = "80dp"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/idText"
+        android:layout_marginTop = "25dp"
+        android:ems = "10"
+        android:hint = "아이디"
+        android:inputType =  "textPersonName"
+        android:layout_gravity = "center"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/passwordText"
+        android:layout_marginTop = "23dp"
+        android:ems = "10"
+        android:hint = "비밀번호"
+        android:inputType =  "textPassword"
+        android:layout_gravity = "center"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/loginButton"
+        android:layout_marginTop = "22dp"
+        android:text = "로그인"
+        android:layout_below = "@+id/passwordText"
+        android:layout_gravity = "center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:layout_gravity = "center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems = "7"
+            android:id = "@+id/guardianregister"
+            android:text = "보호자회원 등록"
+            android:layout_below = "@+id/loginButton"
+            android:layout_marginTop = "20dp"
+            />
+    </LinearLayout>
+</LinearLayout>
